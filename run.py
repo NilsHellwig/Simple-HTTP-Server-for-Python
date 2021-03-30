@@ -2,9 +2,10 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from bs4 import BeautifulSoup
 import time
+from os import environ
 
 hostName = "localhost"
-serverPort = 17995
+serverPort = environ['PORT']
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
