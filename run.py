@@ -1,5 +1,6 @@
 # Python 3 server example
 from http.server import BaseHTTPRequestHandler, HTTPServer
+from bs4 import BeautifulSoup
 import time
 
 hostName = "localhost"
